@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+:root {
+  --orange: #ff7f11;
+  --yellow: #f4ff52;
+  --purple: #c04cfd;
+  --black: #262626;
+  --green: #53ff45;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--black);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+#drum-machine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--yellow);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: var(--orange);
+  padding: 30px;
+  font-size: 2em;
+}
+
+p {
+  color: var(--orange);
+  font-size: 1em;
+}
+
+.record > .play,
+.record > .clear {
+  color: var(--black);
+  background-color: var(--orange);
+  padding: 3px 10px;
+  font-size: 1em;
+  margin: 0px 5px;
+  min-width: 60px;
+}
+
+.drum-pad {
+  font-size: 3em;
+  background-color: var(--purple);
+  color: var(--black);
+  border: none;
+  margin: 2px;
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.drum-pad:hover {
+  background-color: var(--green);
+  color: var(--orange);
+}
+
+.vol {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 40%;
+}
